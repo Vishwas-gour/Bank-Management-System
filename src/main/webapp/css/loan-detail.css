@@ -1,0 +1,161 @@
+/* css/loan-detail.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.breadcrumb a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.alert-success { background: #dff0d8; color: #3c763d; }
+.alert-error   { background: #f2dede; color: #a94442; }
+
+.loan-details-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.loan-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loan-actions .btn {
+    background: #3498db;
+    color: #fff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.loan-actions .btn:hover {
+    background: #2980b9;
+}
+
+.status-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.status-text {
+    font-weight: bold;
+}
+
+.loan-status-bar {
+    padding: 10px;
+    border-left: 5px solid #ccc;
+    margin: 20px 0;
+}
+
+.status-pending    { border-color: orange; background: #fff8e1; }
+.status-approved   { border-color: green; background: #e8f5e9; }
+.status-rejected   { border-color: red; background: #fdecea; }
+.status-active     { border-color: blue; background: #e3f2fd; }
+.status-paid       { border-color: #2ecc71; background: #e9f7ef; }
+
+.detail-section {
+    margin-bottom: 30px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.detail-label {
+    font-weight: bold;
+}
+
+.payment-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: #27ae60;
+    color: white;
+}
+
+.btn-secondary {
+    background: #95a5a6;
+    color: white;
+}
+
+.payment-note {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.timeline-item {
+    border-left: 3px solid #2980b9;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.timeline-marker {
+    width: 12px;
+    height: 12px;
+    background: #2980b9;
+    border-radius: 50%;
+    position: absolute;
+    left: -7px;
+    top: 5px;
+}
+
+.timeline-item.active .timeline-marker {
+    background: #2ecc71;
+}
+
+.help-contact {
+    margin-top: 40px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 14px;
+}

@@ -8,13 +8,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loan Details - MyBankSystem</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/loan1.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/loan.css">
+    <link rel="stylesheet" type="text/css" href="css/loan-detail.css">
+
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
 
 </head>
 <body>
+<jsp:include page="header.jsp"/>
 <div class="container">
-    <jsp:include page="header.jsp"/>
 
     <div class="main-content">
         <h1>Loan Details</h1>
@@ -195,9 +198,9 @@
         </div>
     </div>
 
-    <jsp:include page="footer.jsp"/>
 
 </div>
+<jsp:include page="footer.jsp"/>
 <script>
     function printLoanDetails() {
         window.print();

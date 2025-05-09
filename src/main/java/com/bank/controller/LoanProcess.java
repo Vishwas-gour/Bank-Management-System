@@ -17,11 +17,6 @@ public class LoanProcess extends HttpServlet {
         int loanId = Integer.parseInt(req.getParameter("id"));
         LoanDAO loanDAO = new LoanDAO();
         loanDAO.updateLoanStatus(loanId, action.toUpperCase());
-       req.getRequestDispatcher("/customer-loan-detail").forward(req, resp);
-}
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        req.getRequestDispatcher("/customer-loan-detail").forward(req, resp);
     }
 }

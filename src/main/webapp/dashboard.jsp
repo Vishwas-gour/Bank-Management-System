@@ -36,7 +36,7 @@
                             </div>
                             <div class="account-actions">
                                 <a href="transaction?accountId=${account.accountId}" class="btn">Transactions</a>
-                                <a href="account/details?id=${account.accountId}" class="btn">Details</a>
+                                <a href="account-details?id=${account.accountId}" class="btn">Details</a>
                             </div>
                         </div>
                     </c:forEach>
@@ -44,7 +44,7 @@
             </c:if>
 
             <div class="create-account">
-                <a href="account/create" class="btn">Create New Account</a>
+                <a href="account-create" class="btn">Create New Account</a>
             </div>
 
 

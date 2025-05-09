@@ -21,10 +21,11 @@
         <div class="account-info">
             <div class="account-header">
                 <h3>${account.accountType} Account</h3>
+                Account Status:
                 <span class="status ${account.status.toLowerCase()}">${account.status}</span>
             </div>
 
-            <table class="info-table">
+            <table class="info-table" border="2">
                 <tr>
                     <td>Account Number:</td>
                     <td>${account.accountNumber}</td>
@@ -36,10 +37,6 @@
                 <tr>
                     <td>Interest Rate:</td>
                     <td>${account.interestRate}%</td>
-                </tr>
-                <tr>
-                    <td>Account Created:</td>
-                    <td><fmt:formatDate value="${account.createdAt}" pattern="dd MMM yyyy"/></td>
                 </tr>
             </table>
         </div>
@@ -86,8 +83,8 @@
         </div>
 
         <div class="account-actions">
-            <a href="../transaction?accountId=${account.accountId}" class="btn">New Transaction</a>
-            <a href="../dashboard" class="btn btn-secondary">Back to Dashboard</a>
+            <a href="transaction?accountId=${account.accountId}" class="btn">New Transaction</a>
+            <a href="dashboard" class="btn btn-secondary">Back to Dashboard</a>
         </div>
     </div>
 

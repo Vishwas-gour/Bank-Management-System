@@ -60,12 +60,26 @@ body {
     background-color: #33485c
 }
 
-.error-message {
-    color: #e74c3c;
+.error-message,
+.success-message {
+    padding: 10px;
+    border-radius: 5px;
     margin-bottom: 15px;
     text-align: center;
 }
 
+
+.error-message {
+    border: 1px solid #e74c3c;
+    background-color: #fdecea;
+    color: #c0392b;
+}
+
+.success-message {
+    border: 1px solid #087a39;;
+    background-color: #e8fff2;
+    color:  #2ecc71;
+}
 .login-link {
     text-align: center;
     margin-top: 15px;

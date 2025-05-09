@@ -37,24 +37,35 @@ body {
     text-decoration: underline;
 }
 
+/*{*/
+/*    padding: 10px;*/
+/*    border-radius: 5px;*/
+/*    margin-bottom: 15px;*/
+/*    font-weight: bold;*/
+/*    text-align: center;*/
+/*}*/
+
 .error-message,
 .success-message {
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
-    font-weight: bold;
     text-align: center;
 }
 
+
 .error-message {
-    background-color: #e74c3c;
-    color: white;
+    border: 1px solid #e74c3c;
+    background-color: #fdecea;
+    color: #c0392b;
 }
 
 .success-message {
-    background-color: #2ecc71;
-    color: white;
+    border: 1px solid #087a39;;
+    background-color: #e8fff2;
+    color:  #2ecc71;
 }
+
 
 .loan-application-form {
     margin-top: 20px;

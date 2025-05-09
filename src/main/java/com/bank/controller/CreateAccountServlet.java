@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 
 
-@WebServlet("/account/create")
+@WebServlet("/account-create")
 public class CreateAccountServlet extends HttpServlet {
 
     @Override

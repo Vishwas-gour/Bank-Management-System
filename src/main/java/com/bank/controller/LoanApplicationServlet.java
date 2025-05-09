@@ -51,7 +51,7 @@ public class LoanApplicationServlet extends HttpServlet {
         User user = (User) session.getAttribute("user"); // Make sure this is set during login
 
         if (user == null) {
-            response.sendRedirect("login.jsp");
+            response.sendRedirect("l login.jsp");
             return;
         }
 
