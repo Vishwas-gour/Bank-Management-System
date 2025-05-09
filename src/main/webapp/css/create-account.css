@@ -1,0 +1,167 @@
+/* General body and layout styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /* Ensure all elements inherit box-sizing */
+}
+
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure dashboard takes at least full viewport height */
+}
+
+/* Styles for included header and footer (assuming they exist) */
+/* You would add specific styles for header.jsp and footer.jsp content here */
+/* Example: */
+/* header { background-color: #333; color: white; padding: 10px 20px; text-align: center; } */
+/* footer { background-color: #333; color: white; padding: 10px 20px; text-align: center; margin-top: auto; } /* margin-top: auto pushes footer to the bottom */
+
+
+/* Content area styling (Mobile-first approach) */
+.content {
+    flex-grow: 1; /* Allows content to take up available space */
+    padding: 15px; /* Slightly less padding on smaller screens */
+    margin: 15px; /* Margin around content on smaller screens */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.content h2 {
+    text-align: center;
+    color: #0056b3; /* A shade of blue for headings */
+    margin-bottom: 20px;
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+}
+
+/* Error message styling */
+.error-message {
+    color: #d9534f; /* Red color for errors */
+    background-color: #f2dede; /* Light red background */
+    border: 1px solid #ebccd1; /* Red border */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+    word-break: break-word; /* Prevent long error messages from overflowing */
+}
+
+/* Form styling */
+.create-account-form {
+    margin-top: 15px; /* Slightly less margin on smaller screens */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+.form-group label {
+    display: block; /* Make labels appear on their own line */
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem; /* Slightly smaller label font */
+}
+
+.form-group input[type="number"],
+.form-group select {
+    width: 100%; /* Inputs and selects take full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    /* box-sizing: border-box; is inherited from body */
+}
+
+/* Button styling (Mobile-first: Stack buttons by default) */
+button[type="submit"],
+.btn {
+    display: block; /* Buttons take full width and stack */
+    width: 100%; /* Ensure full width */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none; /* Remove underline for links */
+    text-align: center;
+    margin-bottom: 10px; /* Space below each button when stacked */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Remove bottom margin from the last button in a group */
+.form-group button:last-child,
+.form-group .btn:last-child {
+    margin-bottom: 0;
+}
+
+
+button[type="submit"] {
+    background-color: #007bff; /* Primary blue */
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Secondary gray */
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62; /* Darker gray on hover */
+}
+
+/* Optional: Add some focus styles for accessibility */
+input:focus,
+select:focus,
+button:focus,
+.btn:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* --- Responsive Adjustments (for screens wider than 600px) --- */
+@media (min-width: 600px) {
+    .content {
+        padding: 20px; /* More padding on larger screens */
+        max-width: 800px; /* Limit content width on larger screens */
+        margin: 20px auto; /* Center content and add space above/below */
+    }
+
+    .content h2 {
+        font-size: 2rem; /* Larger heading font */
+    }
+
+    .form-group label {
+        font-size: 1rem; /* Larger label font */
+    }
+
+
+    /* Arrange buttons side-by-side on wider screens */
+    /* Assuming buttons are in the last form-group div */
+    .form-group button[type="submit"],
+    .form-group .btn {
+        display: inline-block; /* Display side-by-side */
+        width: auto; /* Allow width to adjust to content */
+        margin-right: 10px; /* Space between buttons */
+        margin-bottom: 0; /* Remove bottom margin */
+    }
+
+    /* Ensure the last button has no right margin */
+    .form-group button:last-child,
+    .form-group .btn:last-child {
+        margin-right: 0;
+    }
+}
